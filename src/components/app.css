@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #03a9f5;
+}
+label,
+input,
+button {
+  font-size: 1.2rem;
+}
+
+.frontend-Loading{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frontend-Loading i{
+  font-size: 3.2rem;
+  color: var(--primaryColor);
+}
+.formDiv {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border: 4px solid var(--primaryColor);
+  min-width: 500px;
+  width: 40%;
+  border-radius: 10px;
+}
+.inputDiv,
+.signUpBtnDiv,
+.TagLine,
+.createAccLink {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.TagLine {
+  text-align: center;
+}
+.TagLine i {
+  color: var(--primaryColor);
+  font-size: 3.5rem;
+}
+.inputDiv label {
+  margin-left: 18px;
+  color: var(--primaryColor);
+}
+.inputDiv p {
+  margin-top: 8px;
+  margin-left: 18px;
+  color: red;
+}
+.inputDiv input,
+.signUpBtnDiv button {
+  border: 2px solid #afb4b8;
+  outline: none;
+  width: 100%;
+  padding: 10px 18px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.inputDiv input:focus{
+  color: #969ca1;
+  outline: none;
+  border: 2px solid var(--primaryColor);
+  background-color: #f7fcff;
+}
+
+.signUpBtnDiv button {
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  filter: grayscale(0.9);
+  transition: 0.4s linear;
+}
+.signUpBtnDiv button:hover {
+  filter: grayscale(0);
+}
+.createAccLink .anchor {
+  width: fit-content;
+
+  margin: 0 auto;
+}
+.anchor .link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #969ca1;
+  text-decoration: none;
+}
+.anchor .link:hover {
+  color: var(--primaryColor);
+}
+
+/* ///navbar Css */
+.navBar {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #f7fcff;
+}
+.navBar .logo {
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+}
+.navBar .tweets {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
+  height: 100%;
+  width: 250px;
+  user-select: none;
+}
+.tweets .tweet {
+  cursor: pointer;
+  flex: 1;
+}
+.tweets .my__tweet {
+  flex: 1;
+  cursor: pointer;
+}
+.tweets .navigate__animate {
+  position: absolute;
+  height: 5px;
+  border-radius: 20px 20px 0 0;
+  width: 50%;
+  transition: 0.3s linear;
+  bottom: 0;
+  background-color: var(--primaryColor);
+}
+.navBar .profile {
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Cards CSS */
+
+.panelPArent {
+  margin-top: 1.8rem;
+}
+.cardParent {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+.cardBegining {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  min-height: 250px;
+}
+.cardBegining .date {
+  margin-top: 10px;
+  color: #969ca1;
+}
+
+.cardBegining .tweetPara {
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 1.5rem;
+}
+.cardBegining .actionBtn {
+  /* border: 1px solid red; */
+  margin-top: auto;
+  display: flex;
+  /* margin-top: 20px; */
+}
+.cardBegining .actionBtn div {
+  flex: 1;
+  text-align: center;
+}
+.cardBegining .actionBtn div button {
+  color: #969ca1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* New Tweet Post CSSS */
+
+.newTweet {
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+.newTweet textarea {
+    overflow: hidden;
+    width: 100%; 
+    font-size: 1.2rem;
+    font-family: helvetica;
+    resize: none;
+    outline: none;
+  text-align: left;
+  border-radius: 50px;
+  border: 2px solid var(--primaryColor);
+  background-color: #f7fcff;
+  color: var(--primaryColor);
+  padding: 10px 20px;
+}
+.newTweet textarea::placeholder {
+  color: var(--primaryColor);
+}
+.done{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: var(--primaryColor);
+    outline: none;
+    border: none;
+    color:white;
+    padding:8px 15px;
+}
+.cancel{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 20px;
+    background:#969ca1;
+    outline: none;
+    border: none;
+    color:white;
+    padding:8px 15px;
+}
+
+
+/* ///// Profile Panel cCS */
+
+
+.ProfilePanel{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--primaryColor);
+  border-radius: 10px;
+  height: calc(100vh / 1.5);
+}
+.profileUsername,.profileEmail{
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top:20px ;
+  background-color: #f7fcff;
+  color:#7f8488;
+}
+.profileUsername p,.profileEmail p{
+  font-size: 1.1rem;
+}
+
+.profileBtn{
+  margin-top: auto;
+  margin-left: auto;
+}
+.profileBtn button{
+  border-radius: 60px;
+  border: 2px solid var(--primaryColor);
+  background-color: #f7fcff;
+  padding: 10px 15px;
+  color: #03a9f5;
+  cursor: pointer;
+
+}
